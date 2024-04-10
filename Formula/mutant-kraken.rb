@@ -4,9 +4,9 @@
 class MutantKraken < Formula
     desc "Mutation Testing tool for Kotlin written in Rust"
     homepage "https://github.com/JosueMolinaMorales/mutant-kraken"
-    url "https://github.com/josuemolinamorales/mutant-kraken/releases/download/0.1.1-beta/mutant-kraken-macos.tar.gz"
-    sha256 "9a22c7a9ccb29d8c9d289bc552fbfc680bce1c84d9dec217fd5108c67bc9040d"
-    version "0.1.1-beta"
+    url "https://github.com/josuemolinamorales/mutant-kraken/releases/download/0.1.2-beta/mutant-kraken-macos.tar.gz"
+    sha256 "4c6db8da99481ed32c557099c92634274da22dd6e1a811dc605b8ef96c5bbf7d"
+    version "0.1.2-beta"
   
     def install
       bin.install "mutant-kraken"
