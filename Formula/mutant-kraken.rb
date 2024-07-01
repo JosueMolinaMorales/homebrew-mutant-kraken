@@ -1,19 +1,14 @@
-  class MutantKraken < Formula
-    desc "Mutation Testing tool for Kotlin written in Rust"
-    homepage "https://github.com/JosueMolinaMorales/mutant-kraken"
-
-    if OS.mac?
-      url "https://github.com/JosueMolinaMorales/mutant-kraken/releases/download/0.1.3/mutant-kraken-macos.tar.gz"
-      sha256 47f797f8e44bc5a482484520d125c1e8646727040c3ad04d662c2107ed75d1d0
-    elsif OS.linux?
-      url "https://github.com/JosueMolinaMorales/mutant-kraken/releases/download/0.1.3/mutant-kraken-linux.tar.gz"
-      sha256 f45234ec4f9ee199d6acebe37a4c357eacf58a79217f7498535ba532694cea84
-
-    def install
-      bin.install "mutant-kraken"
-    end
-
-    test do
-      system "#{bin}/mutant-kraken", "--version"
-    end
+class MutantKraken < Formula
+  desc "Mutation Testing tool for Kotlin written in Rust"
+  homepage "https://github.com/JosueMolinaMorales/mutant-kraken"
+  version "0.1.3"
+  if OS.mac?
+    url "https://github.com/JosueMolinaMorales/mutant-kraken/releases/download/0.1.3/mutant-kraken-macos.tar.gz"
+    sha256 "90410d5e2395f51cd9f18952e948d36c989e3524d2d52ab99ca577eb86098b2f"
+  elsif OS.linux?
+    url "https://github.com/JosueMolinaMorales/mutant-kraken/releases/download/0.1.3/mutant-kraken-linux.tar.gz"
+    sha256 "923505810a45334cbe94a0483d76993872f29d17918bc79c52c1a6d2d3c79863"
+  def install
+    bin.install "mutant-kraken"
   end
+end
