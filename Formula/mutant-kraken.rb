@@ -4,10 +4,10 @@ class MutantKraken < Formula
   version "0.1.4"
   if OS.mac?
     url "https://github.com/JosueMolinaMorales/mutant-kraken/releases/download/v0.1.4/mutant-kraken-macos.tar.gz"
-    sha256 "94fd56112bbb76398e489d17b90cba90ff0d67bda5a85a7a6c6e9c8590f15347"
+    sha256 "b8dafb4b060c61b33f504893d6204a88b406108eb6aab62d19072c7736d59ccc"
   elsif OS.linux?
     url "https://github.com/JosueMolinaMorales/mutant-kraken/releases/download/v0.1.4/mutant-kraken-linux.tar.gz"
-    sha256 "022bd0097ad2a10346cc20c981897f7afbeda6cd50341d38aec5f01e56209801"
+    sha256 "73a90709c9df2dfd9e844282942ebf11d3c5a647ea68341bd5e704dda9082690"
   end
 
   def install
