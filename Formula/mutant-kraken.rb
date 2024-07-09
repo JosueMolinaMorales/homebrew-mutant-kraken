@@ -6,18 +6,18 @@ class MutantKraken < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/JosueMolinaMorales/mutant-kraken/releases/download/v0.1.5/mutant-kraken-aarch64-apple-darwin.tar.gz"
-      sha256 "5678abc7c3fabf41ec22f1dcb440d40f2432015dce99005f62d377590ec5cafc"
+      sha256 "dd58bd94161e3542683843c8e38525a378c0e5992cb39b83d60adf5200825984"
     elsif Hardware::CPU.intel?
       url "https://github.com/JosueMolinaMorales/mutant-kraken/releases/download/v0.1.5/mutant-kraken-x86_64-apple-darwin.tar.gz"
-      sha256 "3bd0f65553012d6c355a5e76c7b1724471da7485b77e8ab23c405ec5eed36b8c"
+      sha256 "94b37e33dc40ed68c1add2f186456c0e82cb652d7e4c249fbe8ab1e7ab16391e"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/JosueMolinaMorales/mutant-kraken/releases/download/v0.1.5/mutant-kraken-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9ed8857dfa8ba5ef4afbb678fce0031321583f5ecd2e54fb3b90891a3731c112"
+      sha256 "e1ec6a22954de9e9460658a71509f99216b68d553806ccedad9c557de260999e"
     elsif Hardware::CPU.intel?
       url "https://github.com/JosueMolinaMorales/mutant-kraken/releases/download/v0.1.5/mutant-kraken-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9e4f5a4e73936d71ec96435a1f7e4775ea705ff5b9c46637a6427dd1d549a5d7"
+      sha256 "975b1691e30ec1bd9a7a3102b56ed8fba34d74ef88feb906469b0a7f7166cff2"
     end 
   end
 
